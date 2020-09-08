@@ -1,0 +1,15 @@
+.product-grid {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.product-pod-wrapper {
+  margin: 10px;
+  cursor: pointer;
+}
