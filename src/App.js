@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import './App.css';
 import { Header } from './components/Header/Header'
-import { ProductGrid } from './components/ProductGrid/ProductGrid';
 import { ProductPreview } from './components/ProductPreview/ProductPreview';
 import { getProducts } from './api';
 
@@ -12,8 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header text={data?.headerText} />
-      <ProductGrid products={data?.products} />
-      <ProductPreview key={selectedProduct?.description} product={selectedProduct} />
+      <ProductPreview product={selectedProduct || data?.products?.[0]} />
     </div>
   );
 }
