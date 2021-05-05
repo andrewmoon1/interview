@@ -8,7 +8,7 @@ const data = {
       description: 'Rug in Black',
       brand: 'Home',
       link: '',
-      swatch: 'https://bit.ly/3nNKqrQ'
+      swatchUrl: 'https://bit.ly/3nNKqrQ'
     },
     {
       image: 'https://bit.ly/3bjYe8D',
@@ -16,7 +16,7 @@ const data = {
       description: 'Rug in Blue',
       brand: 'Home',
       link: '',
-      swatch: 'https://bit.ly/3eRzCVu'
+      swatchUrl: 'https://bit.ly/3eRzCVu'
     },
     {
       image: 'https://bit.ly/2RnnKT5',
@@ -24,7 +24,7 @@ const data = {
       description: 'Rug in Gray',
       brand: 'Home',
       link: '',
-      swatch: 'https://bit.ly/33h8Znq'
+      swatchUrl: 'https://bit.ly/33h8Znq'
     },
     {
       image: 'https://bit.ly/2RncdTY',
@@ -32,7 +32,7 @@ const data = {
       description: 'Rug in Vintage',
       brand: 'Home Sheds',
       link: '',
-      swatch: 'https://bit.ly/3xMdBjD'
+      swatchUrl: 'https://bit.ly/3xMdBjD'
     },
     {
       image: 'https://bit.ly/2RjRAYF',
@@ -40,7 +40,7 @@ const data = {
       description: 'Rug in  Gray Vintage',
       brand: 'Home',
       link: '',
-      swatch: 'https://bit.ly/3h1dWcn'
+      swatchUrl: 'https://bit.ly/3h1dWcn'
     },
   ]
 };

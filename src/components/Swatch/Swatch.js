@@ -1,13 +1,21 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import './Swatch.scss'
 
 export const Swatch = (props) => {
-    if (!props.swatch) return null;
+    if (!props.swatchUrl) return null;
 
+    const selectedClass = classNames({'product-swatch--current': props.isCurrent})
+    console.log(selectedClass, 'what')
     return (
-        <div className="product-swatch">
-            <img src={props?.swatch} alt="product" />
-        </div>
+        <span className="product-swatch">
+            <img 
+                className={selectedClass} 
+                src={props.swatchUrl} 
+                alt="product" 
+                onClick={() => props.handleClick(props.index)} 
+            />
+        </span>
     );
 }
