@@ -30,7 +30,6 @@ export const ProductPreview = (props) => {
           </p>
         }
         <Price product={product} showSpecialPrice />
-        {props.children}
       </section>
     </article>
   )

@@ -2,19 +2,4 @@
   padding: 10px;
   border: 1px solid #333;
   max-width: 500px;
-
-  &-details {
-    display: flex;
-    flex-direction: column;
-  }
-
-  > img {
-    width: 480px;
-    height: 480px;
-  }
-
-  &-swatches {
-    display: flex;
-    justify-content: center;
-  }
 }
