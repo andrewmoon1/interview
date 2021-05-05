@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { Price } from '../Price/Price';
 import './ProductPreview.scss'
 
 
-export const ProductPreview = ({ product }) => {
+export const ProductPreview = (props) => {
+  const product = props?.product;
   if (!product) return null;
 
   return (
@@ -16,7 +16,7 @@ export const ProductPreview = ({ product }) => {
           alt="Home Depot logo"
         />
       }
-      <aside className="product-preview-details">
+      <section className="product-preview-details">
         {product.brand && 
           <p>
             <b>
@@ -30,7 +30,8 @@ export const ProductPreview = ({ product }) => {
           </p>
         }
         <Price product={product} showSpecialPrice />
-      </aside>
+        {props.children}
+      </section>
     </article>
   )
 };
