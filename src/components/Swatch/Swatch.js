@@ -6,8 +6,8 @@ import './Swatch.scss'
 export const Swatch = (props) => {
     if (!props.swatchUrl) return null;
 
-    const selectedClass = classNames({'product-swatch--current': props.isCurrent})
-    console.log(selectedClass, 'what')
+    const selectedClass = classNames({'product-swatch--current': props.isCurrent});
+
     return (
         <span className="product-swatch">
             <img 
